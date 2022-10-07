@@ -8,8 +8,9 @@ html, body {
 .blog {
 display: flex;
 flex-direction: column;
-flex:1;
-height: 100vh;  
+flex:1; 
+align-items: center;
+min-height: 120px;
 }
 
 
@@ -19,7 +20,8 @@ display: flex;
 background-color: rgb(255, 255, 255);
 flex-direction: row;
 flex-basis: 80px;
-min-height: 80px;
+min-height: 100px;
+width: 100%;
 }
 
 .header-actions {
@@ -36,6 +38,14 @@ background-color: rgb(255, 255, 255);
 align-items: center;
 }
 
+.header-actions-item{ 
+   text-transform: uppercase;
+}
+ /*divider header*/
+ .header-actions-item:hover {
+   cursor: pointer;
+   border-bottom: 1px solid rgba(0,0,0,0.2);
+}
 /*====== logo ==========================================*/
 .header-logo {
 display: flex;
@@ -78,7 +88,20 @@ justify-content: center;
    text-align: center;
 }
 
+/*====== divider ===================================*/
+.divider {
+   margin-top: 20px;
+   margin-bottom: 40px;
+   border-bottom: 2px solid black;
+   width: 700px;
+   height: 1px;
+ }
 /*====== content ===================================*/
+.content-title {
+   font-family: 'Playfair Display', serif;
+   justify-content: center;
+}
+
 .content {
 display: flex;
 flex-direction: column;
@@ -110,8 +133,15 @@ margin: 25px;
 
 /*====== footer =======================================*/
 .footer {
+width: 100%;
 display: flex;
 background-color: black;
 flex-basis: 120px;
-min-height: 120px;
+min-height: 150px;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
 }
