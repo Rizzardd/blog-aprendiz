@@ -104,8 +104,8 @@ margin: 25px;
 /*titulo dos artigos*/
 .content-item-title {
    text-align: center;
-   font-weight: 600;
    font-size: 22px;
+   font-family: 'Poppins', sans-serif;
 }
 
 /*====== footer =======================================*/
