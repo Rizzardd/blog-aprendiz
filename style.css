@@ -55,18 +55,21 @@ justify-content: center;
    margin-top: 10vh;
    width: 50vh;
    height: 70vh;
+   padding: 16px;
    
 }
-
-.banner-image {
-   padding: 16px;
-   }
 
 .banner-text h2 {
    font-family: 'Playfair Display', serif;
    flex-direction: column;
    text-align: center;
    
+}
+
+.banner-title {
+   font-family: 'Playfair Display', serif;
+   flex-direction: column;
+   text-align: center;
 }
 
 .banner-p {
@@ -98,7 +101,12 @@ justify-content: center;
 margin: 25px;
 }
 
-
+/*titulo dos artigos*/
+.content-item-title {
+   text-align: center;
+   font-weight: 600;
+   font-size: 22px;
+}
 
 /*====== footer =======================================*/
 .footer {
