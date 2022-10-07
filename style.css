@@ -1,3 +1,9 @@
+/*====== body =============================================*/
+html, body {
+   padding: 0;
+   margin: 0;
+   background-color: rgb(231, 231, 231);
+   }
 /*====== Blog ================================================*/
 .blog {
 display: flex;
@@ -6,10 +12,11 @@ flex:1;
 height: 100vh;  
 }
 
+
 /*====== header =============================================*/
 .header {
 display: flex;
-background-color: red;
+background-color: rgb(255, 255, 255);
 flex-direction: row;
 flex-basis: 80px;
 min-height: 80px;
@@ -25,21 +32,19 @@ justify-content:flex-end;
 .header-actions-item {
 display: flex;
 padding: 0 16px;
-background: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
 align-items: center;
 }
 
 /*====== logo ==========================================*/
 .header-logo {
 display: flex;
-background-color: rgb(255, 255, 255);
 flex-basis: 50%;
 }
 
 /*====== banner =======================================*/
 .banner {
 display: flex;
-background-color: rgb(231, 231, 231);
 flex-basis: 250px;
 justify-content: center;
 }
@@ -57,18 +62,22 @@ justify-content: center;
    padding: 16px;
    }
 
-/*====== título do banner ============================*/
-.banner-text {
+.banner-text h2 {
    font-family: 'Playfair Display', serif;
    flex-direction: column;
-}
+   text-align: center;
    
-/*====== texto ======================================*/
+}
+
+.banner-p {
+   font-family: 'Poppins', sans-serif;
+   flex-direction: column;
+   text-align: center;
+}
 
 /*====== content ===================================*/
 .content {
 display: flex;
-background-color: rgb(255, 255, 255);
 flex-direction: column;
 flex: 1;
 }
@@ -76,7 +85,6 @@ flex: 1;
 .content-row {
 display: flex;
 flex-direction: row;
-background-color: rgb(231, 231, 231);
 flex-basis: 300px;
 justify-content: center;
 }
