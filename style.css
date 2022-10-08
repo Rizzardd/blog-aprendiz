@@ -159,7 +159,8 @@ width: 100%;
 display: flex;
 background-color: black;
 flex-basis: 120px;
-min-height: 150px;
+min-height: 300px;
+flex-direction: column;
 }
 
 /*====== footer-tag =======================================*/
@@ -167,7 +168,7 @@ min-height: 150px;
    flex: 1;
    display: flex;
    white-space: nowrap;
-   margin-left: 8px;
+   margin-left: 1px;
    font-weight: 400;
    color: rgba(255, 255, 255, 0.7);
    text-transform: uppercase;
@@ -187,15 +188,27 @@ min-height: 150px;
 
 /*====== footer-logo =======================================*/
 .footer-logo img {
-   padding-top: 50px;
+   margin-left: 912px;
+   padding-top: 10px;
    width: 100px;
    display: flex;
    flex-direction: row;
    justify-content: center;
    
 }
-.footer-item-logo {
-   display: flex;
-   flex-direction: column;
+ 
+/*====== footer-text =======================================*/
+.footer-p {
    align-items: center;
+   text-align: center;
+   color: rgba(255, 255, 255, 0.7);
+   margin-left: 10px;
+   flex-direction: column;
+}
+
+.footer-brand-text {
+   flex-direction: column;
+   text-align: center;
+   color: rgba(255, 255, 255, 0.7);
+   margin-left: 10px;
 }
