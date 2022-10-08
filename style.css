@@ -15,6 +15,28 @@ min-height: 120px;
 
 
 /*====== header =============================================*/
+/*título do header*/
+.header-tag {
+      font-family: 'Playfair Display', serif;
+      flex-direction: column-reverse;
+      flex: 1;
+      display: flex;
+      white-space: nowrap;
+      margin-left: 8px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      text-transform: uppercase;
+      text-decoration: none;
+      list-style: none;
+   }
+
+   .header-item-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+   /*======*/
+
 .header {
 display: flex;
 background-color: rgb(255, 255, 255);
@@ -41,7 +63,7 @@ align-items: center;
 .header-actions-item{ 
    text-transform: uppercase;
 }
- /*divider header*/
+
  .header-actions-item:hover {
    cursor: pointer;
    border-bottom: 1px solid rgba(0,0,0,0.2);
@@ -119,7 +141,7 @@ justify-content: center;
 .content-item img {
 width: 50vh;
 height: 30vh;
-object-fit: cover;
+object-fit: cover;
 justify-content: center;
 margin: 25px;
 }
@@ -127,7 +149,7 @@ margin: 25px;
 /*titulo dos artigos*/
 .content-item-title {
    text-align: center;
-   font-size: 22px;
+   font-size: 22px;
    font-family: 'Poppins', sans-serif;
 }
 
@@ -140,11 +162,40 @@ flex-basis: 120px;
 min-height: 150px;
 }
 
-.footer-logo {
+/*====== footer-tag =======================================*/
+.footer-tag {
+   flex: 1;
    display: flex;
-   margin-top: 30px;
-   margin-left: 100vh;
+   white-space: nowrap;
+   margin-left: 8px;
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.7);
+   text-transform: uppercase;
+   text-decoration: none;
+   list-style: none;
+}
+
+.footer-tag:nth-child(odd) {
+  font-weight: 700;
+}
+
+.footer-tags {
+   display: flex;
+   flex-direction: row;
+   justify-items: space-evenly;
+}
+
+/*====== footer-logo =======================================*/
+.footer-logo img {
+   padding-top: 50px;
+   width: 100px;
+   display: flex;
+   flex-direction: row;
    justify-content: center;
-   width: 10vh;
-   height: 10vh;
+   
+}
+.footer-item-logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
