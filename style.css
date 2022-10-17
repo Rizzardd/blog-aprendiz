@@ -163,14 +163,26 @@ body {
 .accordion-item {
   max-width: 450px;
 }
-
+.accordion-button:not(.collapsed) {
+  color: inherit !important;
+  background-color: inherit   !important;
+}
+.accordion-body::before {
+  content: "";
+  width: 80%;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  height: 1px;
+  display: block;
+  margin: 8px auto;
+}
 /*titulo dos artigos*/
-.accordion-item-title {
+.content-item-title {
   text-align: center;
   font-size: 22px;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  margin-top: 8px;
 }
 
 /*====== footer =======================================*/
